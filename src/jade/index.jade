@@ -1,0 +1,9 @@
+extends layout
+block title
+  title (8) Color Flood
+block content
+  .game#game
+    h1 Day 8 - Colour Flood
+    .stats Level: #[span#level 0] Moves: #[span#moves 0]/#[span#max 0]
+    .grid#grid(data-size=100)
+    ul.colors#colors

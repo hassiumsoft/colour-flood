@@ -1,0 +1,71 @@
+body
+  height: 100%
+  text-align: center
+  user-select: none
+
+h1
+  font-weight: $font-weight
+  margin: 0
+
+.game
+  align-items: center
+  display: flex
+  flex-direction: column
+  height: 100%
+  justify-content: space-around
+  margin: 2vmin 0
+
+.stats
+  width: 100vmin
+
+  span:first-child
+    margin-right: 10vmin
+
+.grid,
+.colors
+  align-items: center
+  border: 2vmin solid rgba(black, .2)
+  display: flex
+  height: 100vmin
+  flex-wrap: wrap
+  justify-content: space-around
+  margin: auto
+  width: 100vmin
+
+  div
+    border: 1px solid rgba(black, .2)
+    height: 10%
+    transition: background-color .4s ease-in
+    width: 10%
+
+.colors
+  border: 0
+  height: 10vmin
+  list-style: none outside none
+  padding: 0
+
+  li
+    align-items: center
+    border: 1px solid rgba(white, .2)
+    border-radius: 100%
+    cursor: pointer
+    display: flex
+    height: 10vmin
+    justify-content: space-around
+    width: 10vmin
+
+    @for $i from 1 through length($colors)
+      &[data-value='#{$i - 1}']
+        box-shadow: 2px 3px 0 color(nth($colors, $i), dark)
+
+@for $i from 1 through length($colors)
+  [data-value='#{$i - 1}']
+    background-color: color(nth($colors, $i))
+
+$grids: 10, 13, 15, 18
+
+@each $size in $grids
+  [data-size='#{$size * $size}']
+    div
+      height: (100 / $size) * 1%
+      width: (100 / $size) * 1%
