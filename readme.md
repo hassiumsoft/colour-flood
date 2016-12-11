@@ -1,6 +1,6 @@
-# Day 7 of My of My 3 Weeks Game Challenge
+# Day 8 of My of My 3 Weeks Game Challenge
 
-Colour Flood is an easy to play puzzle game. The goal is to flood the entire board with a single colour in as few steps as possible. You start at the top left corner and you have to pick the next Colour.
+Colour Flood is an easy to play puzzle game. The goal is to flood the entire board with a single colour in as few steps as possible. You start at the top left corner and you have to pick the next colour.
 
 ## User Stories
 
