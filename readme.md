@@ -2,6 +2,8 @@
 
 Colour Flood is an easy to play puzzle game. The goal is to flood the entire board with a single colour in as few steps as possible. You start at the top left corner and you have to pick the next colour.
 
+If you enjoyed this game, you can check out some of the other ones from my [3 weeks game challenge](https://github.com/zsoltime/game-challenge).
+
 ## User Stories
 
 - [x] As a user, I can see a board with random colours and different colour options to choose from
